@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Read Theory</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="normalise.css">
+	 <link rel="stylesheet" href="tag.css">
+	 
+<body>
+       
+    <div id="wrapper">
+	<div class ="nav">
+	<div class="content">
+	<div class= "left">
+	
+        <ul>
+            <header>
+                <h1> HUMBER EDUCATION </h1><br/>
+			</header>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="onlinequiz.html">Online Quiz</a></li>
+				    <li><a href="tag2.html">Read Theory</a></li>
+					<li><a href="">Student Services</a></li>
+					<li><a href="online.html">Online Community</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+					
+	</div>
+    </div>
+				
+	<div class= "right">
+         <ul>
+            <li><a href="sign.html">SignIn</a></li>
+            <li><a href="signup.html">SignUp</a></li>
+         </ul>
+                
+	</div>
+    </div>
+		
+	<main>
+		  
+		  <h2>Common understandings about Readings</h2>
+		  <img src="reading.jpg"  alt="read theory" width="320" height="230">
+		  <p id="p1"> Reading is the active process of understanding print and graphic texts. Reading is a thinking process. Effective readers know that when they read, what they read is supposed to make sense. They monitor their understanding, and when they lose the meaning of what they are reading, they often unconsciously select and use a reading strategy (such as rereading or asking questions) that will help them reconnect with the meaning of the text. Reading skills and strategies can be taught explicitly while students are learning subject-specific content through authentic reading tasks.Students can be taught to be strategic and effective readers. Struggling readers benefit from a variety of instructional approaches that demonstrate reading skills as subject content is taught. Direct teaching, thinking aloud, modelling, discussion, and small-group support are only a few of the approaches teachers use to help students become more strategic and effective readers in different contexts .</p>
+          <input type="button" value="Hide text" 
+          onclick="document.getElementById('p1').style.visibility='hidden'">
+
+          <input type="button" value="Show text"
+           onclick="document.getElementById('p1').style.visibility='visible'">
+
+		  <h3> Struggling readers need:</h3>
+		  <p  id="p2"> knowledge of different types of texts and the best strategies for reading them. <br> multiple and meaningful opportunities to practise reading in subject-specific contexts. <br> opportunities to practise reading with appropriate resources. <br> opportunities to talk about their reading and thinking. <br> background knowledge in subject areas. <br> expanded sight vocabularies and word-solving strategies for reading subject-specific texts. <br> strategies for previewing texts, monitoring their understanding, determining the most important ideas. <br> strategies for becoming independent readers in any context.</p>
+          <input type="button" value="Hide text" 
+          onclick="document.getElementById('p2').style.visibility='hidden'">
+
+         <input type="button" value="Show text"
+         onclick="document.getElementById('p2').style.visibility='visible'">
+          <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="200" height="180">
+          <p>Click the light bulb to turn on/off the light.</p>
+
+        <script>
+        function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+        } else {
+        image.src = "pic_bulbon.gif";
+        }
+        }
+        </script>
+
+		<ul>
+		     <li>Getting Ready to Read:</li> 
+		     <li>Previewing a Text </li>
+		     <li>Analyzing the Features of a Text </li>
+		     <li>Finding Organizational Patterns</li>
+     	     <li>Anticipation Guide </li>
+		     <li>Finding Signal Words Extending Vocabulary (Creating a Word Wall)</li>
+		     <li>Engaging in Reading:</li>
+             <li>Using Context to Find Meaning</li>
+             <li>Reading Between the Lines (Inferences)</li>
+             <li> Most/Least Important Idea(s) and Information </li>
+             <li>Sorting Ideas Using a Concept Map </li>
+             <li>Visualizing </li>
+             <li>Making Notes</li>
+        </ul>
+		<div class="form">
+            <form>
+                <input type="text" id="name" placeholder="NAME"/><span style="color:red;" id="errfname"></span>
+                <input type="email" id="email" placeholder="E-MAIL"/>
+                <input type="text" id="number" placeholder="MOBILE NUMBER"/>
+                <input type="text" id="msg" placeholder="MESSAGE"/>
+                <p id="demo"> </p>
+                <button type="button" onclick="myFunction()" id="submit">SEND</button>
+            </form>
+        </div>
+        <script>
+		
+			function myFunction()
+			{
+				//get the value
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var number = document.getElementById('number').value;
+				var msg = document.getElementById('msg').value;
+				if(!name &&  name === '') {
+					document.getElementById("demo").innerHTML="Please input the name";
+				} else if(!email && email === '') {
+					document.getElementById("demo").innerHTML="Please input the email";
+				}  else if(!number && number === ''){
+				    document.getElementById("demo").innerHTML="Please input the number";
+				} else if(!msg && msg === ''){
+				    document.getElementById("demo").innerHTML="Please write the message";
+				}
+				else {
+					document.getElementById("demo").innerHTML="MESSAGE SEND";
+				}
+				
+			
+			}
+		</script>    
+		
+		  
+	</main>
+    
+	<footer>Copyright &copy; 2018 Online Schooling\Terms of service<br>
+	     <img src="Facebook.png" alt="facebook logo">
+		 <img src="insta.png" alt="instagram logo">
+		 <img src="twitter.jpg" alt="twitter logo"><br>
+		 <a href="mailto:humber@education.com">humber@education.com</a>
+    </footer>
+      
+	</div>
+	
+</body>
+</html>
+	

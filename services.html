@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Student Services</title>
+     <meta charset="utf-8">
+	 <link rel="stylesheet" href="normalise.css">
+	 <link rel="stylesheet" href="services2.css">
+	 
+</head>
+<body>
+    <div id="wrapper">
+	<div class ="nav">
+	<div class="content">
+    <div class= "left">
+              <ul>
+                <header>
+				<h1> HUMBER EDUCATION </h1><br/>
+				</header>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="onlinequiz.html">Online Quiz</a></li>
+					<li><a href="tag2.html">Read Theory</a></li>
+					<li><a href="services.html">Student Services</a></li>
+					<li><a href="online.html">Online Community</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+					
+	</div>
+    </div>
+                
+	<div class= "right">
+            <ul>
+                <li><a href="sign.html">SignIn</a></li>
+                <li><a href="sign.html">SignUp</a></li>
+            </ul>
+    </div>
+    </div>
+            
+	<video width="100%" height="290" controls>
+	<source src = "video.webm" type ='video/webm'>
+    </video>
+		
+	<main>
+		<form>
+		<fieldset>
+		         <h2>Career Services</h2>
+                 <p id="bye">Career & Placement Services provides personalized and relevant career advice to our students and alumni. Whether you're looking for a job, developing networking skills, researching and preparing graduate school applications, or defining your career goals, we can help.</p>
+                 <button type="button" onclick='document.getElementById("bye").innerHTML = "Humber Colleges Aboriginal Resource Centre offers a wide range of services to support the Aboriginal student population, including academic, personal, cultural and career support. They also plan a variety of educational, cultural and fun activities for all of our new and returning students."'>Click Me!</button>
+
+				 <h3>Cover letters and resumes</h3>
+		         
+		         <p id="hello">A successful job search starts with a cover letter and resume that market you effectively. Let us show you how to create a cover letter and resume that stand out.</p>
+		         <button type="button" onclick='document.getElementById("hello").innerHTML = "The International Student Services Office is available to help international students make a smooth transition to university life in Canada. They can assist you with non-academic matters such as purchasing medical insurance, finding housing or linking you with a senior student. They also facilitate a intercultural office and the International Students Association."'>Click Me!</button>
+				 <button id="buttongame"><a href="cover.html">Cover Letter Tips</a></button>
+				 <h4>Job search tips and strategies</h4>
+		         <p>Your job searching techniques can mean the difference between frustration and success. Whether you're looking for a placement, on-campus part-time work, or a full-time career, use these tips to increase your chances of finding the job you want.</p>
+		         
+				 <h5>Proactively create opportunities</h5>
+		          
+				<ul>
+                    <li>Attend networking events to meet others in the industry.</li>
+                    <li>Join professional associations.</li>
+                    <li>Volunteer in an area of interest to you.</li>
+                    <li>Participate in Internet live chats on Twitter and LinkedIn.</li>
+                    <li>Go to trade shows.</li>
+                    <li>Attend seminars/events – or better yet, volunteer to help at one!</li>
+                    <li>Target companies you would like to work for.</li>
+                    <li>Set up informational interviews with people in your industry.</li>
+                    <li>Place your resume with an online service.</li>
+			    </ul>
+			        <script>
+                   function changeImage() {
+                   document.getElementById('myimage').src = "compman.gif";
+                   }
+                   </script>
+                 <img id="myimage" onclick="changeImage()" src="compman_lowres.gif" width="207" height="100">
+                  <p>Click the image to display a high resolution version.</p>
+					<h6>Post-graduate resources and tips</h6>
+                    <p>If you’re a student considering further education after your degree and diploma, or a graduate now thinking about a Masters degree, we can help you research your options and set goals for yourself.</p>
+			        <p>Ontario University Application Centre  www.ouac.on.ca</p>
+                    <p>Provides application information for professional programs in Ontario,specifically: Teacher's College,Rehabilitation Science programs(Physiotherapy, occupational therapy,audiology and speech language pathology), medical school and law school.</p>
+		    <div class="form">
+            <form>
+                <input type="text" id="name" placeholder="NAME"/><span style="color:red;" id="errfname"></span>
+                <input type="email" id="email" placeholder="E-MAIL"/>
+                <input type="text" id="number" placeholder="MOBILE NUMBER"/>
+                <input type="text" id="msg" placeholder="MESSAGE"/>
+                <p id="demo"> </p>
+                <button type="button" onclick="myFunction()" id="submit">SEND</button>
+            </form>
+            </div>
+            <script>
+		
+			function myFunction()
+			{
+				//get the value
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var number = document.getElementById('number').value;
+				var msg = document.getElementById('msg').value;
+				//var pattern = /^[a-zA-Z]{2,30}$/;
+				if(!name &&  name === '') {
+					document.getElementById("demo").innerHTML="Please input the name";
+				} else if(!email && email === '') {
+					document.getElementById("demo").innerHTML="Please input the email";
+				}  else if(!number && number === ''){
+				    document.getElementById("demo").innerHTML="Please input the number";
+				} else if(!msg && msg === ''){
+				    document.getElementById("demo").innerHTML="Please write the message";
+				}
+				else {
+					document.getElementById("demo").innerHTML="THANKYOU";
+				}
+				
+			
+			}
+		</script>
+                  
+        
+		</fieldset>
+        </form>
+	</main>
+	    
+		<footer>
+		       Copyright &copy; 2018 Online Schooling\Terms of service<br>
+	           <img src="Facebook.png" alt="facebook logo">
+		       <img src="insta.png" alt="instagram logo">
+		       <img src="twitter.jpg" alt="twitter logo"><br>
+               <a href="mailto:humber@education.com">humber@education.com</a>
+        </footer>
+
+	</div>
+</body>
+</html>
